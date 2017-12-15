@@ -21,7 +21,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: z00nx/au-packages
   github_api_key:
-    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: Cgx8XLs5UQ8o/J5CrNr3kGvvRp8sanq59hZr3jC9rA6QbkCClRzp5CEA0gjrldrH
 
 
   # Mail credentials - for error notifications
@@ -35,14 +35,14 @@ environment:
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
   # Optional, leave empty to create anonymous gist
-  gist_id:
+  gist_id: 659441c4a5f80ceae7a71ff3eb524d17
 
   # Force test: gist id for test results
   gist_id_test:
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: YOUR_GITHUB_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
