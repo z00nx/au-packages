@@ -113,3 +113,12 @@ notifications:
 
 #on_finish:
 #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+deploy:
+- provider: NuGet
+  server: https://www.myget.org/F/z00nx/api/v2/package
+  api_key:
+    secure: ITQHzizh65YKxfZu1FJ1gyelAHwDYsQWorTD+NkZcsrG2SBDNM8hKtOQib9RgWvG
+  skip_symbols: true
+  on:
+    branch: master
