@@ -1,4 +1,4 @@
-function Install-CommonProgramsShortcut($file, $path='')
+﻿function Install-CommonProgramsShortcut($file, $path='')
 {
 	if (!$file)
 	{
@@ -30,8 +30,8 @@ function Install-CommonProgramsShortcut($file, $path='')
 }
 
 $packageName = 'dnspy'
-$url = 'https://github.com/0xd4d/dnSpy/releases/download/v4.5.0/dnSpy.zip'
-$checksum32  = '1356F3976DCD54EEE73611D1617CA8D113EAE6C14FF0B8971A3D21444FD22554'
+$url = 'https://github.com/0xd4d/dnSpy/releases/download/v4.5.1/dnSpy.zip'
+$checksum32  = 'ca2c72fe1dbcd957a7db58a2382e1a8aa750dc6d88edb5ff82dd27a8ee6c3ade'
 
 $packageArgs = @{
   packageName   = $packageName
