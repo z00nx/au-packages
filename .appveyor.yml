@@ -95,7 +95,7 @@ build_script:
         }
     }
 
-    ./update_all.ps1 -ForcedPackages 'dnspy fiddler4 wireshark x64dbg'
+    ./update_all.ps1
     7z a au_temp.zip $Env:TEMP\chocolatey\au\*
 
 artifacts:
