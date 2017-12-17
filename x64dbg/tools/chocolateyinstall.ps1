@@ -1,17 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop';
 $packageName = 'x64dbg'
 
-$url      = 'https://sourceforge.net/projects/x64dbg/files/snapshots/snapshot_2017-12-08_03-24.zip'
-$checksum = '7a5c5149b610863b1d880151957882923130d314a1c8b982d2ff82064272d5ca'
-
 $toolsDir = ${Env:ProgramFiles}
 $toolsDir = Join-Path $toolsDir $packageName
 
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  url           = $url
-  checksum      = $checksum
+  url           = 'https://github.com/x64dbg/x64dbg/releases/download/snapshot/snapshot_2017-12-08_03-24.zip'
+  checksum      = 'f2f7fe7cd874da88cb8552d630e6a6e55fa1a8243f7b96f00f9ac3df66c17747'
   checksumType  = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
