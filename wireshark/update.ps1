@@ -5,10 +5,10 @@ $releases = 'https://www.wireshark.org/download.html'
 function global:au_SearchReplace {
    @{
         ".\tools\chocolateyInstall.ps1" = @{
-            "(?i)(^\s*url32\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
-            "(?i)(^\s*url64\s*=\s*)('.*')"        = "`$1'$($Latest.URL64)'"
-            "(?i)(^\s*checksum32\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
-            "(?i)(^\s*checksum64\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum64)'"
+            "(?i)(^\s*\`$url32\s*=\s*)('.*')"        = "`$1'$($Latest.URL32)'"
+            "(?i)(^\s*\`$url64\s*=\s*)('.*')"        = "`$1'$($Latest.URL64)'"
+            "(?i)(^\s*\`$checksum32\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum32)'"
+            "(?i)(^\s*\`$checksum64\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
