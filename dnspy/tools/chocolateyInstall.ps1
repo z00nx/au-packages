@@ -29,14 +29,10 @@
 	                           -TargetPath "$targetPath"
 }
 
-$packageName = 'dnspy'
-$url = 'https://github.com/0xd4d/dnSpy/releases/download/v4.5.1/dnSpy.zip'
-$checksum32  = 'ca2c72fe1dbcd957a7db58a2382e1a8aa750dc6d88edb5ff82dd27a8ee6c3ade'
-
 $packageArgs = @{
-  packageName   = $packageName
-  url           = $url
-  checksum      = $checksum32
+  packageName   = 'dnspy'
+  url           = 'https://github.com/0xd4d/dnSpy/releases/download/v4.5.1/dnSpy.zip'
+  checksum      = 'ca2c72fe1dbcd957a7db58a2382e1a8aa750dc6d88edb5ff82dd27a8ee6c3ade'
   checksumType  = 'sha256'
   unzipLocation = Split-Path $MyInvocation.MyCommand.Definition
 }
