@@ -8,7 +8,7 @@
     <owners>kujotx, Wireshark team</owners>
     <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
     <projectUrl>http://www.wireshark.org</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/bb198f7f2c19aa099ec6be29b1ad9eb187437c0e/icons/wireshark.png</iconUrl>
+    <iconUrl>https://raw.githubusercontent.com/wireshark/wireshark/584c14c66cc55a88af24b4326f4e789bb6f09c11/image/wsicon1024.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Wireshark is the world's foremost network protocol analyzer. It lets you capture and interactively browse the traffic running on a computer network. It is the de facto (and often de jure) standard across many industries and educational institutions.
 Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998.</description>
