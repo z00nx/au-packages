@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>wireshark</id>
+    <version>2.4.3</version>
+    <title>Wireshark</title>
+    <authors>Gerald Combs, Wireshark team</authors>
+    <owners>kujotx, Wireshark team</owners>
+    <licenseUrl>http://www.gnu.org/copyleft/gpl.html</licenseUrl>
+    <projectUrl>http://www.wireshark.org</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/chocolatey/chocolatey-coreteampackages/bb198f7f2c19aa099ec6be29b1ad9eb187437c0e/icons/wireshark.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Wireshark is the world's foremost network protocol analyzer. It lets you capture and interactively browse the traffic running on a computer network. It is the de facto (and often de jure) standard across many industries and educational institutions.
+Wireshark development thrives thanks to the contributions of networking experts across the globe. It is the continuation of a project that started in 1998.</description>
+    <summary>Wireshark</summary>
+    <releaseNotes>https://www.wireshark.org/docs/relnotes/</releaseNotes>
+    <tags>wireshark network protocol analyzer sniffer admin</tags>
+    <projectSourceUrl>https://code.wireshark.org/review/wireshark</projectSourceUrl>
+    <packageSourceUrl>https://github.com/kujotx/chocolatey-packages/tree/master/wireshark</packageSourceUrl>
+    <docsUrl>https://wiki.wireshark.org/</docsUrl>
+    <mailingListUrl>https://www.wireshark.org/lists/</mailingListUrl>
+    <bugTrackerUrl>https://bugs.wireshark.org/bugzilla/</bugTrackerUrl>
+  </metadata>
+</package>
