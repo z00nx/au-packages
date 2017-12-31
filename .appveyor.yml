@@ -45,8 +45,8 @@ environment:
     secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name "Chocolatey"
+- git config --global user.email "z00nx0@gmail.com"
+- git config --global user.name "z00nx 0"
 - git config --global core.safecrlf false
 
 install:
