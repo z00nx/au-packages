@@ -31,8 +31,8 @@
 
 $packageArgs = @{
   packageName   = 'dnspy'
-  url           = 'https://github.com/0xd4d/dnSpy/releases/download/v4.5.2/dnSpy.zip'
-  checksum      = '697841f762c50b0d2dcd39ef5981055cd06640786dd25cb81047180345c487ea'
+  url           = 'https://github.com/0xd4d/dnSpy/releases/download/v4.5.3/dnSpy.zip'
+  checksum      = 'a78b53bdfd219e6259dbae212d6c8ea35a6a2cc931f1e144f0c8c3317935c735'
   checksumType  = 'sha256'
   unzipLocation = Split-Path $MyInvocation.MyCommand.Definition
 }
