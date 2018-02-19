@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>pestudio</id>
+    <version>8.69.20180129</version>
+    <title>PEStudio</title>
+    <authors>winitor</authors>
+    <owners>z00nx</owners>
+    <licenseUrl>https://www.winitor.com</licenseUrl>
+    <projectUrl>https://www.winitor.com</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>The goal of pestudio is to spot these artifacts in order to ease and accelerate Malware Initial Assessment. The tool uses a powerful parser and a flexible set of configuration files that are used to detect various types of indicators and determine thresholds. Since the file being analyzed is never started, you can inspect unknown or malicious executable file, trojan and ransomware without any risk of infection.</description>
+    <copyright>Freeware</copyright>
+    <tags>pe binary analysis</tags>
+    <docsUrl>https://www.winitor.com/features.html</docsUrl>
+  </metadata>
+</package>
