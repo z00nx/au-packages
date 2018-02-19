@@ -4,13 +4,12 @@ $packageName = 'pestudio'
 $ErrorActionPreference = 'Stop'; # stop on all errors
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://www.winitor.com/tools/pestudio/current/pestudio.zip'
 
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  url           = $url
-  checksum      = '5ED9378A2555F2EB3B4B4FD9013A5F1D15995774C63EE93873F786607CC4A416'
+  url           = 'https://www.winitor.com/tools/pestudio/current/pestudio.zip'
+  checksum      = 'df06d029424694fed718f11054c925f8c4079c4ff61b514d0cc701e5a8a58a66'
   checksumType  = 'sha256'
 }
 

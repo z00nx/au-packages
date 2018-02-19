@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>de4dot</id>
+    <version>0.0.29</version>
+    <title>de4dot</title>
+    <authors>0xd4d</authors>
+    <owners>z00nx</owners>
+    <licenseUrl>https://raw.githubusercontent.com/0xd4d/de4dot/master/COPYING</licenseUrl>
+    <projectUrl>https://github.com/0xd4d/de4dot</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>de4dot is an open source (GPLv3) .NET deobfuscator and unpacker written in C#. It will try its best to restore a packed and obfuscated assembly to almost the original assembly. Most of the obfuscation can be completely restored (eg. string encryption), but symbol renaming is impossible to restore since the original names aren't (usually) part of the obfuscated assembly.</description>
+    <summary>.NET deobfuscator and unpacker</summary>
+    <releaseNotes />
+    <tags>cil deobfuscator dnlib dotnet il msil net .net unpacker</tags>
+    <dependencies>
+      <dependency id="dotnet4.0" />
+    </dependencies>
+  </metadata>
+</package>
