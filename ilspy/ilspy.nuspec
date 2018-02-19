@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>ilspy</id>
-    <version>2.4.0.1963</version>
+    <version>3.0.1</version>
     <title>ILSpy</title>
     <authors>Daniel Grunwald,David Srbecky,Ed Harvey,Siegfried Pammer,Artur Zgodzinski</authors>
     <owners>z00nx</owners>
