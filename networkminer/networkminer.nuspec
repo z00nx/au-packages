@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>networkminer</id>
+    <version>0.0</version>
+    <title>NetworkMiner</title>
+    <authors>NETRESEC</authors>
+    <owners>z00nx</owners>
+    <projectUrl>http://www.netresec.com/?page=NetworkMiner</projectUrl>
+    <iconUrl>http://www.netresec.com/images/NetworkMiner_logo_313x313.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NetworkMiner is a Network Forensic Analysis Tool (NFAT) for Windows (but also works in Linux / Mac OS X / FreeBSD). NetworkMiner can be used as a passive network sniffer/packet capturing tool in order to detect operating systems, sessions, hostnames, open ports etc. without putting any traffic on the network. NetworkMiner can also parse PCAP files for off-line analysis and to regenerate/reassemble transmitted files and certificates from PCAP files.
+
+NetworkMiner makes it easy to perform advanced Network Traffic Analysis (NTA) by providing extracted artifacts in an intuitive user interface. The way data is presented not only makes the analysis simpler, it also saves valuable time for the analyst or forensic investigator.
+
+NetworkMiner has, since the first release in 2007, become a popular tool among incident response teams as well as law enforcement. NetworkMiner is today used by companies and organizations all over the world.</description>
+    <summary>networkminer packet capture pcap</summary>
+    <tags>networkminer packet capture pcap</tags>
+  </metadata>
+</package>
