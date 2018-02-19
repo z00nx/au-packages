@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ilspy</id>
+    <version>2.4.0.1963</version>
+    <title>ILSpy</title>
+    <authors>Daniel Grunwald,David Srbecky,Ed Harvey,Siegfried Pammer,Artur Zgodzinski</authors>
+    <owners>z00nx</owners>
+    <licenseUrl>https://github.com/icsharpcode/ILSpy/blob/master/README.txt</licenseUrl>
+    <projectUrl>http://ilspy.net/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Development started after Red Gate announced that the free version of .NET Reflector would cease to exist by end of February 2011.
+
+### Features
+* Assembly browsing
+* IL Disassembly
+* Support C# 5.0 "async"
+* Decompilation to C#
+* Supports lambdas and 'yield return'
+* Shows XML documentation
+* Decompilation to VB
+* Saving of resources
+* Save decompiled assembly as .csproj
+* Search for types/methods/properties (substring)
+* Hyperlink-based type/method/property navigation
+* Base/Derived types navigation
+* Navigation history
+* BAML to XAML decompiler
+* Save Assembly as C# Project
+* Find usage of field/method
+* Extensible via plugins (MEF)
+* Assembly Lists</description>
+    <summary>Open-source .NET assembly browser and decompiler</summary>
+    <releaseNotes>https://github.com/icsharpcode/ILSpy/releases</releaseNotes>
+    <copyright>© 2011-2014 AlphaSierraPapa for the SharpDevelop team</copyright>
+    <tags>dotnet decompiler</tags>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/automatic/_output/ilspy/2.4.0.1963</packageSourceUrl>
+    <dependencies>
+      <dependency id="dotnet4.0" />
+    </dependencies>
+  </metadata>
+</package>
