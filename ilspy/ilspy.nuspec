@@ -8,6 +8,7 @@
     <owners>z00nx</owners>
     <licenseUrl>https://github.com/icsharpcode/ILSpy/blob/master/README.txt</licenseUrl>
     <projectUrl>http://ilspy.net/</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/icsharpcode/ILSpy/master/ILSpy/Images/ILSpy-Large.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Development started after Red Gate announced that the free version of .NET Reflector would cease to exist by end of February 2011.
 
