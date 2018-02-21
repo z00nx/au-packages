@@ -1,9 +1,5 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageName = 'pestudio'
-
-$ErrorActionPreference = 'Stop'; # stop on all errors
-
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName   = $packageName
@@ -15,7 +11,12 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$target = Join-Path $toolsDir "pestudio\pestudio.exe"
+Move-Item $toolsDir\pestudio\* $toolsDir\
+
+Remove-Item -Recurse $toolsDir\pestudio
+
+$target = Join-Path $toolsDir "pestudio.exe"
 
 $shortcut = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\" + $packageName + ".lnk"
+
 Install-ChocolateyShortcut -shortcutFilePath $shortcut -targetPath $target
