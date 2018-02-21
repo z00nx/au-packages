@@ -1,48 +1,25 @@
-﻿function Install-CommonProgramsShortcut($file, $path='')
-{
-	if (!$file)
-	{
-		Write-Error "Unable to install common programs shortcut, no file provided"
-		return
-	}
-
-	$commonPrograms = [Environment]::GetFolderPath([Environment+SpecialFolder]::Programs)
-	if (!$commonPrograms)
-	{
-		Write-Error "Unable to install common programs shortcut, could not get Programs path"
-		return
-	}
-
-	$fileLnk = [IO.Path]::GetFileNameWithoutExtension($file) + '.lnk'
-	$targetPath = Join-Path -Path "$unzipLocation" -ChildPath "$file"
-	$shortcutPath = Join-Path -Path "$commonPrograms" -ChildPath "$path" `
-	            | Join-Path -ChildPath "$fileLnk"
-
-	# Create shortcut directory if it doesn't exist
-	$shortcutDir = [IO.Path]::GetDirectoryName($shortcutPath)
-	if (!(Test-Path -Path "$shortcutDir"))
-	{
-		New-Item -ItemType "directory" -Path "$shortcutDir"
-	}
-
-	Install-ChocolateyShortcut -ShortcutFilePath "$shortcutPath" `
-	                           -TargetPath "$targetPath"
-}
-
-$packageName    = 'networkminer'
-$url            = 'https://www.netresec.com/?download=NetworkMiner'
-$checksum32     = '971ea40fd1882a720d72e06c8105bf16fe437d1206527c5f9e00efc9be789345'
-$specificFolder = 'NetworkMiner_2-2'
+﻿$toolsDir        = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
+$packageName     = 'networkminer'
+$url             = 'https://www.netresec.com/?download=NetworkMiner'
+$checksum32      = '971ea40fd1882a720d72e06c8105bf16fe437d1206527c5f9e00efc9be789345'
+$networkMinerDir = 'NetworkMiner_2-2'
 
 $packageArgs = @{
   packageName    = $packageName
   url            = $url
   checksum       = $checksum32
   checksumType   = 'sha256'
-  unzipLocation  = Split-Path $MyInvocation.MyCommand.Definition
-  specificFolder = $specificFolder
+  unzipLocation  = $toolsDir
 }
-
+    
 Install-ChocolateyZipPackage @packageArgs
 
-Install-CommonProgramsShortcut -Path 'NetworkMiner' -File 'NetworkMiner.exe'
+Move-Item $toolsDir\$networkMinerDir\* $toolsDir\
+
+Remove-Item -Recurse $toolsDir\$networkMinerDir
+
+$target = Join-Path $toolsDir "NetworkMiner.exe"
+
+$shortcut = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\" + $packageName + ".lnk"
+
+Install-ChocolateyShortcut -shortcutFilePath $shortcut -targetPath $target
