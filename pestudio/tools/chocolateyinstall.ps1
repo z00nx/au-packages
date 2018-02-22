@@ -11,11 +11,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-Move-Item $toolsDir\pestudio\* $toolsDir\
-
-Remove-Item -Recurse $toolsDir\pestudio
-
-$target = Join-Path $toolsDir "pestudio.exe"
+$target = Join-Path $toolsDir "pestudio\pestudio.exe"
 
 $shortcut = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\" + $packageName + ".lnk"
 

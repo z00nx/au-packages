@@ -14,11 +14,9 @@ $packageArgs = @{
     
 Install-ChocolateyZipPackage @packageArgs
 
-Move-Item $toolsDir\$networkMinerDir\* $toolsDir\
+$target = Join-Path $toolsDir $networkMinerDir
 
-Remove-Item -Recurse $toolsDir\$networkMinerDir
-
-$target = Join-Path $toolsDir "NetworkMiner.exe"
+$target = Join-Path $target "NetworkMiner.exe"
 
 $shortcut = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\" + $packageName + ".lnk"
 
