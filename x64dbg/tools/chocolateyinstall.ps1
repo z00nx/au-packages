@@ -7,8 +7,8 @@ $toolsDir = Join-Path $toolsDir $packageName
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  url           = 'https://github.com/x64dbg/x64dbg/releases/download/snapshot/snapshot_2018-03-04_23-10.zip'
-  checksum      = '56a64cb7009c5ba8b537d729fee49e07ba963338ed2452d5a074d8a3d72eb944'
+  url           = 'https://github.com/x64dbg/x64dbg/releases/download/snapshot/snapshot_2018-03-06_00-01.zip'
+  checksum      = 'cb17992738a41ba9ff43b785ab8a9f5f660d7555cbdb38da12302bc7b648be7f'
   checksumType  = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
