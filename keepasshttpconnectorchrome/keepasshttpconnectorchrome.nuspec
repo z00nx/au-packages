@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>keepasshttpconnectorchrome</id>
+    <version>1.0</version>
+    <title>KeePassHttp-Connector for Chrome</title>
+    <authors>https://github.com/smorks/keepasshttp-connector</authors>
+    <description>KeePassHttp-Connector for Chrome</description>
+    <dependencies>
+      <dependency id="googlechrome" />
+    </dependencies>
+  </metadata>
+</package>
