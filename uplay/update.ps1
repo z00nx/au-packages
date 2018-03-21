@@ -17,7 +17,7 @@ function global:au_GetLatest {
     iwr $url -OutFile $setup_path
     $version = gi $setup_path | % { [System.Diagnostics.FileVersionInfo]::GetVersionInfo($_).FileVersion }
     $checksum32 = Get-FileHash $setup_path | % Hash
-    rm fiddlersetup.exe -ea 0
+    rm UplayInstaller.exe -ea 0
     @{
         Version    = $version
         URL32      = $url
