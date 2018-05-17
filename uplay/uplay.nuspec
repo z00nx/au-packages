@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>uplay</id>
-    <version>57.0.5659.0</version>
+    <version>58.0.5666.0</version>
     <title>Uplay</title>
     <authors>Ubisoft Entertainment</authors>
     <owners>AdmiringWorm, Marek, z00nx</owners>
