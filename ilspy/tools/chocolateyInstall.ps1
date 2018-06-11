@@ -10,8 +10,8 @@ $toolsDir = Join-Path $toolsDir $packageName
 $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
-  url           = 'https://github.com/icsharpcode/ILSpy/releases/download/v3.1-rc/ILSpy_binaries.3.1.0.3645-rc.zip'
-  checksum      = 'd4c9267a8df698112bc94a59bfffa740b3ceeb59ec8f6c70f818ecf0671c3bb5'
+  url           = 'https://github.com/icsharpcode/ILSpy/releases/download/v3.2-beta/ILSpy_binaries_3.2.0.3809-beta.zip'
+  checksum      = 'c58697b06f047d92bcdaebd155737bd151affd2bf629c833529b5f0be8e3e068'
   checksumType  = 'sha256'
 }
 Install-ChocolateyZipPackage @packageArgs
