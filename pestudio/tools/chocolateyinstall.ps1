@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName   = $packageName
   unzipLocation = $toolsDir
   url           = 'https://www.winitor.com/tools/pestudio/current/pestudio.zip'
-  checksum      = 'b1ff0078942dd22ecdf05b4c02cfac6e16e4cb451d52d4734648fe3221287fe7'
+  checksum      = 'ece0874741a218ad206ef74e246f14b97984e8faab59e0cb90b4ac50e1382d5c'
   checksumType  = 'sha256'
 }
 
