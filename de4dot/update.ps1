@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $version = ($projects.Content | ConvertFrom-Json).build.version.replace('x', '0')
     $jobid = ($projects.Content | ConvertFrom-Json).build.jobs[0].jobId
     $artifacts = Invoke-WebRequest "https://ci.appveyor.com/api/buildjobs/$jobid/artifacts"
-    $filename = ($artifacts.Content | ConvertFrom-Json).filename
+    $filename = ($artifacts.Content | ConvertFrom-Json).filename[1]
     $url32   = "https://ci.appveyor.com/api/buildjobs/$jobid/artifacts/$filename"
     @{
         URL32   = $url32
