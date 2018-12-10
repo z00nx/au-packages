@@ -4,8 +4,8 @@ $unzipLocation = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName            = $packageName
-  url                    = 'https://ci.appveyor.com/api/buildjobs/r05d3xt4lovgcqj8/artifacts/Release/de4dot-net35.zip'
-  checksum               = 'd4edc000c6a035636ce4aa49e67deb0f04425a74ad4fd77f52be4125de290f3c'
+  url                    = 'https://ci.appveyor.com/api/buildjobs/nkq1u01v01uueyt1/artifacts/de4dot/de4dot-netcoreapp2.1.zip'
+  checksum               = '09c25e04f3fbfb92d5e7b5c510e349b91bb9e93b5669d0e805f129f56d95c5c7'
   checksumType           = 'sha256'
   unzipLocation          = $unzipLocation
 }
