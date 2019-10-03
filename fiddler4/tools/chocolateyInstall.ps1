@@ -4,7 +4,7 @@ $packageArgs = @{
   packageName            = 'fiddler4'
   fileType               = 'EXE'
   url                    = 'https://www.telerik.com/docs/default-source/fiddler/fiddlersetup.exe'
-  checksum               = '4DFF6CB1B88A503D3982C7CCBCD5622496EBA4C21AAB5A2C0C0F1E376A2EB809'
+  checksum               = '2AFE37AB5CDB7DF4A80FCBE85B9298F509DF064173E6A4EE7008E5D409BC6172'
   checksumType           = 'sha256'
   silentArgs             = '/S /D=C:\Program Files\Fiddler'
   validExitCodes         = @(0)
