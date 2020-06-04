@@ -5,11 +5,11 @@ $packageName = 'WireShark'
 $packageArgs = @{
   packageName            = $packageName
   fileType               = 'EXE'
-  url                    = 'https://1.na.dl.wireshark.org/win32/Wireshark-win32-3.2.3.exe'
-  checksum               = '98fe809f13ea9a1e917b467f7cc6b9c0a32b1f5610406d764348edf4704fe326'
+  url                    = 'https://1.na.dl.wireshark.org/win32/Wireshark-win32-3.2.4.exe'
+  checksum               = 'c17e4a812031d5dfd4ef0a4b4dae1b60bb45eb7ce8c9e8b1b5eff4db5bcf4b72'
   checksumType           = 'sha256'
-  url64                  = 'https://1.na.dl.wireshark.org/win64/Wireshark-win64-3.2.3.exe'
-  checksum64             = 'e345963a475b79df937b41e297e8680f1f4f0cc8e8bee715fafc50834e6cc44d'
+  url64                  = 'https://1.na.dl.wireshark.org/win64/Wireshark-win64-3.2.4.exe'
+  checksum64             = 'db2565ee6410b7c57f54aaac86954e4f6a98e2ea31ffbea83e60b981fff57301'
   checksumType64         = 'sha256'
   silentArgs             = '/S /quicklaunchicon=no'
   validExitCodes         = @(0)
