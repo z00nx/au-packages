@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>wireshark</id>
-    <version>3.2.5</version>
+    <version>3.2.6</version>
     <title>Wireshark</title>
     <authors>Gerald Combs, Wireshark team</authors>
     <owners>kujotx, Wireshark team</owners>
