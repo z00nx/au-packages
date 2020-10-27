@@ -1,8 +1,8 @@
 ﻿$toolsDir        = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $packageName     = 'networkminer'
 $url             = 'https://www.netresec.com/?download=NetworkMiner'
-$checksum32      = '3f11dc812a9a3c84fafa29660e6142464582825569771e1f60bd6568e0269b23'
-$networkMinerDir = 'NetworkMiner_2-5'
+$checksum32      = '34d81e42eec33183b79191de165ae506933fa3bb5b1fd836e70ef81468c9c65b'
+$networkMinerDir = 'NetworkMiner_2-6'
 
 $packageArgs = @{
   packageName    = $packageName
